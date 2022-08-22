@@ -30,7 +30,7 @@ namespace MovieApp.Domain.Services
 
             var entity = _mapper.Map<MovieEntity>(model);
             entity.CreationDate = DateTime.Now;
-            entity.CreationUser = "yusuf";
+            entity.CreationUser = "fatih";
             movieRepository.Insert(entity);
             return true;
         }
